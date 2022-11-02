@@ -1,0 +1,37 @@
+.promo {
+    min-height: 800px;
+    background-image: url(../img/promo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: -30px 0%;
+    padding-top: 90px;
+}
+
+
+.promo__content {
+    display: block;
+    width: 550px;
+    min-height: 384px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.promo__title {
+    padding: 0;
+    margin: 0;
+}
+
+.promo__subtitle {
+    padding: 0;
+    margin: 0;
+}
+
+.promo__main-text {
+    padding: 30px 60px;
+    margin: 15px 0 0;
+}
+
+.promo__button {
+    margin: 0 auto;
+}
