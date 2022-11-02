@@ -1,3 +1,19 @@
-body {
-    background-color: tomato;
+@use "./fonts.scss";
+@use "./blocks/button.scss";
+
+
+
+
+
+/* main styles */
+
+html {
+    background-color: #f4f4f4;
 }
+
+body { 
+    background-color: #FFF; 
+    min-width: 320px;
+    margin: 0 auto;
+}
+

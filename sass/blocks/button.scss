@@ -1,0 +1,23 @@
+@mixin bold-font {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.button {
+    text-decoration: none;
+    color: white;    
+    width: 135px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7859C;
+    border-radius: 12px;
+    box-sizing: border-box;
+    
+    @include bold-font;
+    font-size: 18px;
+    line-height: 25px;
+}
+
