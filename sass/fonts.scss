@@ -40,10 +40,14 @@ body {
     line-height: 86px;
 }
 
+.secondary-title, h2 {
+    @include bold-font;
+    font-size: 65px;
+    line-height: 58px;
+}
 
 .subtitle {
     @include bold-font;
-    font-size: 50px;
     font-size: 18px;
     line-height: 25px;
 }

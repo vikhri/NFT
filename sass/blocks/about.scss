@@ -1,0 +1,75 @@
+@mixin main-font {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin bold-font {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+.about__content {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+}
+
+.about__title {
+    padding: 0;
+    margin: 0;
+}
+
+.about__subtitle {
+    padding: 0;
+    margin: 5px;
+}
+
+ .about__subtitle::before {
+    content: '';
+    background-image: url('../img/peach-dot.png');
+    position: absolute;
+    width: 32px;
+    height: 25px;
+ }
+
+.about__grid {
+    width: 1000px;
+    margin-top: 76px;
+    margin-left: 230px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-list {
+    text-align: left;
+    padding-right: 150px;
+}
+
+.about-list__item {
+    @include bold-font;
+    font-size: 24px;
+    line-height: 21px;
+
+    padding: 28px 0 17px;
+    margin: 0;
+}
+
+.about-list__item--bordered {
+    border-top: 1px solid #40475699;
+}
+
+.about-list__description {
+    @include main-font;
+    font-size: 18px;
+    line-height: 25px;
+
+    padding: 0 0 30px;
+    margin: 0;
+}
