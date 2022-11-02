@@ -43,6 +43,53 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  cursor: pointer;
+}
+
+.page-header {
+  display: flex;
+}
+
+.page-header__menu {
+  margin-left: auto;
+}
+
+.page-header__button {
+  justify-self: flex-end;
+  margin-left: 30px;
+}
+
+.page__header {
+  padding: 18px 64px;
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.menu__item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.menu__link {
+  text-decoration: none;
 }
 
 /* main styles */

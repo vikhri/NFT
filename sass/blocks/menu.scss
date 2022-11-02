@@ -1,0 +1,34 @@
+@mixin bold-font {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.menu__item {
+    @include bold-font;
+    font-size: 18px;
+    line-height: 25px;
+    
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+}
+
