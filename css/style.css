@@ -93,6 +93,10 @@ body {
   margin-bottom: 120px;
 }
 
+.page__about {
+  margin-bottom: 90px;
+}
+
 .menu {
   list-style: none;
   padding: 0;
@@ -160,7 +164,7 @@ body {
 
 .about__content {
   display: block;
-  margin: 0 auto;
+  width: 1000px;
   text-align: center;
   position: relative;
 }
@@ -173,12 +177,14 @@ body {
 .about__subtitle {
   padding: 0;
   margin: 5px;
+  position: relative;
 }
 
 .about__subtitle::before {
   content: "";
   background-image: url("../img/peach-dot.png");
-  position: absolute;
+  position: relative;
+  left: -5px;
   width: 32px;
   height: 25px;
 }
@@ -186,7 +192,6 @@ body {
 .about__grid {
   width: 1000px;
   margin-top: 76px;
-  margin-left: 230px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -221,6 +226,76 @@ body {
   margin: 0;
 }
 
+.exclusive {
+  background-color: #FFDBB4;
+  padding-bottom: 110px;
+  padding-top: 140px;
+}
+
+.excusive__subtitle {
+  margin: 0;
+  padding: 0;
+}
+
+.exclusive__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 68px;
+}
+
+.exclusive__content {
+  width: 1000px;
+}
+
+.exclusive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exclusive-list__title {
+  font-size: 36px;
+  line-height: 32px;
+}
+
+.exclusive-list__text {
+  width: 400px;
+}
+
+.exclusive-list__item {
+  width: auto;
+  min-height: 640px;
+  border-top: 1px solid black;
+}
+
+.exclusive-list__item:last-child {
+  border-bottom: 1px solid black;
+}
+
+.exclusive-list__item--1 {
+  background-image: url(../img/common-man.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.exclusive-list__item--2 {
+  background-image: url(../img/uncommon-man.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.exclusive-list__item--3 {
+  background-image: url(../img/rare-man.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.exclusive-list__item--4 {
+  background-image: url(../img/legendary-man.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
 /* main styles */
 html {
   background-color: #f4f4f4;
@@ -243,6 +318,11 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

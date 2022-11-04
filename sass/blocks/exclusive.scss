@@ -1,0 +1,69 @@
+.exclusive {
+    background-color: #FFDBB4;
+    padding-bottom: 110px;
+    padding-top: 140px;
+}
+
+.excusive__subtitle {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.exclusive__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 68px;
+}
+
+.exclusive__content {
+    width: 1000px;
+}
+
+.exclusive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exclusive-list__title {
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.exclusive-list__text {
+    width: 400px;
+}
+
+.exclusive-list__item {
+    width: auto;
+    min-height: 640px;
+    border-top: 1px solid black;
+}
+
+.exclusive-list__item:last-child {
+    border-bottom: 1px solid black;
+}
+
+.exclusive-list__item--1 {
+    background-image: url(../img/common-man.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.exclusive-list__item--2 {
+    background-image: url(../img/uncommon-man.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.exclusive-list__item--3 {
+    background-image: url(../img/rare-man.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.exclusive-list__item--4 {
+    background-image: url(../img/legendary-man.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}

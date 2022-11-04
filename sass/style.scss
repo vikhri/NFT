@@ -5,6 +5,7 @@
 @use './blocks/menu.scss';
 @use './blocks/promo.scss';
 @use './blocks/about.scss';
+@use './blocks/exclusive.scss';
 
 
 
@@ -36,4 +37,8 @@ body {
     overflow: hidden;
 }
 
-
+.container {
+    display: block;
+    margin: 0 auto;
+    
+}
