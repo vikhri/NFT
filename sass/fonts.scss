@@ -46,6 +46,12 @@ body {
     line-height: 58px;
 }
 
+.third-title, h3 {
+    @include bold-font;
+    font-size: 36px;
+    line-height: 32px;
+}
+
 .subtitle {
     @include bold-font;
     font-size: 18px;

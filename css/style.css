@@ -36,6 +36,14 @@ body {
   line-height: 58px;
 }
 
+.third-title, h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
+}
+
 .subtitle {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -95,6 +103,10 @@ body {
 
 .page__about {
   margin-bottom: 90px;
+}
+
+.page__exclusive {
+  margin-bottom: 145px;
 }
 
 .menu {
@@ -294,6 +306,78 @@ body {
   background-image: url(../img/legendary-man.png);
   background-repeat: no-repeat;
   background-position: 100%;
+}
+
+.roadmap__content {
+  width: 1000px;
+}
+
+.roadmap__subtitle {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.roadmap__title {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 68px;
+  text-align: center;
+}
+
+.roadmap-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+}
+
+.roadmap__item {
+  background-image: url("../img/roadmap-spot.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 533px;
+  min-height: 477px;
+  box-sizing: border-box;
+  padding: 124px 85px;
+  position: relative;
+}
+
+.roadmap-list__text {
+  max-width: 360px;
+  color: #404756;
+}
+
+.roadmap-list__title {
+  padding: 0;
+  margin: 0;
+}
+
+.roadmap-list__subtitile {
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.roadmap-list__percent {
+  display: block;
+  position: absolute;
+  left: -236px;
+  margin: 10px;
+  color: #F7859C;
+}
+
+.roadmap-list__percent::after {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 36px;
+  background-image: url("../img/pink-dot.png");
+  background-repeat: no-repeat;
+  left: -50px;
+  top: -10px;
 }
 
 /* main styles */
