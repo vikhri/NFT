@@ -102,11 +102,38 @@ body {
 }
 
 .page__about {
-  margin-bottom: 90px;
+  margin-bottom: 130px;
 }
 
 .page__exclusive {
   margin-bottom: 145px;
+  background-color: #FBF1E6;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.page__exclusive::before {
+  content: " ";
+  display: inline-block;
+  background-image: url(../img/exclusive-top-wave.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: 110px;
+  width: 100%;
+  position: relative;
+  top: -150px;
+}
+
+.page__exclusive::after {
+  content: " ";
+  display: inline-block;
+  background-image: url(../img/exclusive-bottom-wave.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: 130px;
+  width: 100%;
+  position: relative;
+  top: 105px;
 }
 
 .page__roadmap {
@@ -115,6 +142,54 @@ body {
 
 .page__team {
   margin-bottom: 150px;
+  background-color: #FDDBE2;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.page__team::before {
+  content: " ";
+  display: inline-block;
+  background-image: url(../img/team-top-wave.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: 110px;
+  width: 100%;
+  position: relative;
+  top: -100px;
+}
+
+.page__team::after {
+  content: " ";
+  display: inline-block;
+  background-image: url(../img/team-bottom-wave.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: 110px;
+  width: 100%;
+  position: relative;
+  top: 95px;
+}
+
+.page__faq {
+  margin-bottom: 150px;
+}
+
+.page__footer {
+  padding-bottom: 30px;
+  background-color: #D3D4ED;
+}
+
+.page__footer::before {
+  content: " ";
+  display: inline-block;
+  background-image: url(../img/footer-wave.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: -5px;
 }
 
 .menu {
@@ -243,12 +318,6 @@ body {
   line-height: 25px;
   padding: 0 0 30px;
   margin: 0;
-}
-
-.exclusive {
-  background-color: #FFDBB4;
-  padding-bottom: 110px;
-  padding-top: 140px;
 }
 
 .excusive__subtitle {
@@ -460,6 +529,79 @@ body {
 
 dt.faq__question:last-of-type {
   border-bottom: 1px solid black;
+}
+
+.footer__content {
+  width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 900px 200px;
+  grid-template-rows: 76px 200px 50px;
+  grid-template-areas: "title navtitle" "socials navig" "madeby madeby";
+}
+
+.footer__title {
+  grid-area: title;
+  margin: 0;
+  padding: 0 0 16px;
+  border-bottom: 1px solid black;
+}
+
+.navigation__title {
+  grid-area: navtitle;
+  margin: 33px 0 0;
+  padding: 0 0 16px;
+  border-bottom: 1px solid black;
+}
+
+.socials__list {
+  grid-area: socials;
+  list-style: none;
+  margin: 11px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.socials-list__item {
+  margin-right: 30px;
+}
+
+.socials-list__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.navigation__list {
+  grid-area: navig;
+  margin-top: 11px;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__item {
+  margin-bottom: 11px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
+  color: black;
+}
+
+.footer__authors {
+  display: flex;
+  flex-direction: row;
+  grid-area: madeby;
+  border-top: 1px solid black;
+}
+
+.footer__authors p {
+  margin-right: 40px;
 }
 
 /* main styles */
