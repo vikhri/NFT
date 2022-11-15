@@ -1,11 +1,13 @@
 
 
 .footer__content {
-    width: 1100px;
+    position: relative;
+
+    width: 1000px;
     margin: 0 auto;
     display: grid;
 
-    grid-template-columns: 900px 200px;
+    grid-template-columns: 800px 200px;
     grid-template-rows: 76px 200px 50px;
     grid-template-areas:
     "title navtitle"
@@ -14,7 +16,16 @@
 
 }
 
+.footer__content::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 220px;
+    background-image: url('../img/footer-dots.png');
+    left: -160px;
+    bottom: 240px;
 
+}
 
 .footer__title {
     grid-area: title;
@@ -32,8 +43,13 @@
     padding: 0 0 16px;
 
     border-bottom: 1px solid black;
-    
+
+    background-image: url('../img/blue-dot.png');
+    background-repeat: no-repeat;
+    background-position: 49% 10%;
 }
+ 
+
 
 .socials__list {
     grid-area: socials;

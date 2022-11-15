@@ -1,3 +1,8 @@
+.page {
+    position: relative;
+    width: 1440px;
+}
+
 .page__header {
     padding: 18px 64px;
     margin: 0;
@@ -85,8 +90,11 @@
 }
 
 .page__footer {
+    padding-top: 100px;
     padding-bottom: 30px;
     background-color: #D3D4ED;
+
+    position: relative;
 }
 
 .page__footer::before {
@@ -97,7 +105,7 @@
     background-color: #fff;
     height: 100px;
     width: 100%;
-    position: relative;
-    top: -5px;
+    position: absolute;
+    top: -100px;
 
 }

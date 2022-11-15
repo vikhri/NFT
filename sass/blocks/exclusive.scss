@@ -1,9 +1,12 @@
 
 .excusive__subtitle {
-    margin: 0;
-    padding: 0;
-    
+    margin: 0 0 0 -11px;
+    padding: 15px;
+    background-image: url(../img/orange-dot.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
 }
+
 
 .exclusive__title {
     margin: 0;
@@ -26,9 +29,18 @@
     line-height: 32px;
 }
 
+.exclusive-list__subtitile {
+    display: block;
+}
+
+.exclusive-list__img {
+    margin: 0 10px;
+}
+
 .exclusive-list__text {
     width: 400px;
 }
+
 
 .exclusive-list__item {
     width: auto;

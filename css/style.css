@@ -92,6 +92,11 @@ body {
   margin-left: 30px;
 }
 
+.page {
+  position: relative;
+  width: 1440px;
+}
+
 .page__header {
   padding: 18px 64px;
   margin: 0;
@@ -176,8 +181,10 @@ body {
 }
 
 .page__footer {
+  padding-top: 100px;
   padding-bottom: 30px;
   background-color: #D3D4ED;
+  position: relative;
 }
 
 .page__footer::before {
@@ -188,8 +195,8 @@ body {
   background-color: #fff;
   height: 100px;
   width: 100%;
-  position: relative;
-  top: -5px;
+  position: absolute;
+  top: -100px;
 }
 
 .menu {
@@ -244,8 +251,11 @@ body {
 }
 
 .promo__subtitle {
-  padding: 0;
+  padding: 15px 0 0;
   margin: 0;
+  background-image: url("../img/peach-dot.png");
+  background-repeat: no-repeat;
+  background-position: 38% 10%;
 }
 
 .promo__main-text {
@@ -270,18 +280,12 @@ body {
 }
 
 .about__subtitle {
-  padding: 0;
+  padding: 10px 0 15px;
   margin: 5px;
   position: relative;
-}
-
-.about__subtitle::before {
-  content: "";
   background-image: url("../img/peach-dot.png");
-  position: relative;
-  left: -5px;
-  width: 32px;
-  height: 25px;
+  background-repeat: no-repeat;
+  background-position: 46% 0%;
 }
 
 .about__grid {
@@ -321,8 +325,11 @@ body {
 }
 
 .excusive__subtitle {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 -11px;
+  padding: 15px;
+  background-image: url(../img/orange-dot.png);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 }
 
 .exclusive__title {
@@ -344,6 +351,14 @@ body {
 .exclusive-list__title {
   font-size: 36px;
   line-height: 32px;
+}
+
+.exclusive-list__subtitile {
+  display: block;
+}
+
+.exclusive-list__img {
+  margin: 0 10px;
 }
 
 .exclusive-list__text {
@@ -386,12 +401,16 @@ body {
 
 .roadmap__content {
   width: 1100px;
+  position: relative;
 }
 
 .roadmap__subtitle {
   margin: 0 auto;
-  padding: 0;
+  padding: 15px 0;
   text-align: center;
+  background-image: url("../img/pink-dot.png");
+  background-repeat: no-repeat;
+  background-position: 47% 10%;
 }
 
 .roadmap__title {
@@ -402,6 +421,7 @@ body {
 }
 
 .roadmap-list {
+  position: relative;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -409,6 +429,18 @@ body {
   flex-direction: column;
   gap: 70px;
   align-items: center;
+}
+
+.roadmap-list::before {
+  content: "";
+  display: block;
+  background-image: url("../img/roadmap-dots.png");
+  position: absolute;
+  right: 220px;
+  top: 10px;
+  width: 200px;
+  height: 150px;
+  z-index: 1;
 }
 
 .roadmap__item {
@@ -420,6 +452,30 @@ body {
   box-sizing: border-box;
   padding: 124px 85px;
   position: relative;
+}
+
+.roadmap__item--illusrtated-1::before {
+  content: "";
+  display: block;
+  width: 185px;
+  height: 423px;
+  background-image: url("../img/roadmap-1st-person.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -250px;
+  bottom: 10px;
+}
+
+.roadmap__item--illusrtated-2::before {
+  content: "";
+  display: block;
+  width: 346px;
+  height: 470px;
+  background-image: url(../img/roadmap-2nd-person.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -360px;
+  bottom: -60px;
 }
 
 .roadmap-list__text {
@@ -462,8 +518,11 @@ body {
 }
 
 .team__subtitle {
-  padding: 0;
+  padding: 15px 0;
   margin: 0;
+  background-image: url("../img/pink-dot.png");
+  background-repeat: no-repeat;
+  background-position: 48% 10%;
 }
 
 .team__title {
@@ -500,14 +559,33 @@ body {
   margin: 0;
 }
 
+.faq {
+  position: relative;
+}
+
 .faq__content {
-  width: 1100px;
+  width: 1000px;
+}
+
+.faq__content::before {
+  content: "";
+  background-image: url("../img/faq-dots.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 300px;
+  height: 325px;
+  position: absolute;
+  left: -20px;
+  top: -80px;
 }
 
 .faq__subtitle {
   text-align: center;
-  padding: 0;
+  padding: 15px 0;
   margin: 0;
+  background-image: url("../img/blue-dot.png");
+  background-repeat: no-repeat;
+  background-position: 49% 10%;
 }
 
 .faq__title {
@@ -523,8 +601,36 @@ body {
   line-height: 22px;
 }
 
-.faq__answer {
+.faq__question::before, .faq__question::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 98%;
+  width: 18px;
+  height: 3px;
+  background-color: black;
+}
+
+.faq__question::before {
+  top: 15px;
+  left: 978px;
+}
+
+.faq__question::after {
+  transform: rotate(90deg);
+  top: -10px;
+  left: 978px;
+}
+
+.faq__answer--closed {
   display: none;
+}
+
+.faq__answer--open {
+  padding: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  color: grey;
 }
 
 dt.faq__question:last-of-type {
@@ -532,12 +638,23 @@ dt.faq__question:last-of-type {
 }
 
 .footer__content {
-  width: 1100px;
+  position: relative;
+  width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 900px 200px;
+  grid-template-columns: 800px 200px;
   grid-template-rows: 76px 200px 50px;
   grid-template-areas: "title navtitle" "socials navig" "madeby madeby";
+}
+
+.footer__content::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 220px;
+  background-image: url("../img/footer-dots.png");
+  left: -160px;
+  bottom: 240px;
 }
 
 .footer__title {
@@ -552,6 +669,9 @@ dt.faq__question:last-of-type {
   margin: 33px 0 0;
   padding: 0 0 16px;
   border-bottom: 1px solid black;
+  background-image: url("../img/blue-dot.png");
+  background-repeat: no-repeat;
+  background-position: 49% 10%;
 }
 
 .socials__list {

@@ -50,22 +50,22 @@
         <ul class="exclusive__list exclusive-list">
           <li class="exclusive-list__item exclusive-list__item--1 ">
             <h3 class="exclusive-list__title third-title">Common</h3>
-            <p class="exclusive-list__subtitile subtitle">Tier 1</p>
+            <p class="exclusive-list__subtitile subtitle">Tier 1 <img class="exclusive-list__img" width="100px" height="20px" alt="Rarity 5 of 5" src="./img/5-dot-rarity.png"></p>
             <p class="exclusive-list__text main-text">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
           </li>
           <li class="exclusive-list__item exclusive-list__item--2">
             <h3 class="exclusive-list__title third-title">Uncommon</h3>
-            <p class="exclusive-list__subtitile subtitle">Tier 2</p>
+            <p class="exclusive-list__subtitile subtitle">Tier 2  <img class="exclusive-list__img" width="100px" height="20px" alt="Rarity 3 of 5" src="./img/3-dot-rarity.png"></p>
             <p class="exclusive-list__text main-text">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
           </li>
           <li class="exclusive-list__item exclusive-list__item--3">
             <h3 class="exclusive-list__title third-title">Rare</h3>
-            <p class="exclusive-list__subtitile subtitle">Tier 3</p>
+            <p class="exclusive-list__subtitile subtitle">Tier 3  <img class="exclusive-list__img" width="100px" height="20px" alt="Rarity 2 of 5" src="./img/2-dot-rarity.png"></p>
             <p class="exclusive-list__text main-text">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
           </li>
           <li class="exclusive-list__item exclusive-list__item--4">
             <h3 class="exclusive-list__title third-title">Legendary</h3>
-            <p class="exclusive-list__subtitile subtitle">Tier 4</p>
+            <p class="exclusive-list__subtitile subtitle">Tier 4  <img class="exclusive-list__img" width="100px" height="20px" alt="Rarity 1 of 5" src="./img/1-dot-rarity.png"></p>
             <p class="exclusive-list__text main-text">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
           </li>
         </ul>
@@ -82,7 +82,7 @@
             <h3 class="roadmap-list__title third-title">Community DAO</h3>
             <p class="roadmap-list__text main-text">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
           </li>
-          <li class="roadmap__item">
+          <li class="roadmap__item roadmap__item--illusrtated-1">
             <span class="roadmap-list__percent decoration-dot decoration-dot--pink">20%</span>
             <p class="roadmap-list__subtitile subtitle">Q2 2022</p>
             <h3 class="roadmap-list__title third-title">Charity Donation</h3>
@@ -100,7 +100,7 @@
             <h3 class="roadmap-list__title third-title">Rare Giveaways</h3>
             <p class="roadmap-list__text main-text">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</p>
           </li>
-          <li class="roadmap__item">
+          <li class="roadmap__item roadmap__item--illusrtated-2">
             <span class="roadmap-list__percent decoration-dot decoration-dot--pink">100%</span>
             <p class="roadmap-list__subtitile subtitle">Q1 2023</p>
             <h3 class="roadmap-list__title third-title">Metaverse</h3>
@@ -196,4 +196,20 @@
         </div>
       </div>
     </footer>
+    <script>window.addEventListener('DOMContentLoaded', (event) => {
+      var question = document.querySelector('.faq__question');
+      var answer = document.querySelector('.faq__answer');
+      
+
+      question.addEventListener('click', () => {
+          if (answer.classList.contains('faq__answer--closed')) {
+              answer.classList.remove('faq__answer--closed');
+              answer.classList.add('faq__answer--open');
+          
+          } else {
+              answer.classList.add('faq__answer--closed');
+              answer.classList.remove('faq__answer--open');
+  }
+  });
+  });</script> 
   </body>

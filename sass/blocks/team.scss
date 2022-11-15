@@ -4,8 +4,12 @@
 }
 
 .team__subtitle {
-    padding: 0;
+    padding: 15px 0;
     margin: 0;
+
+    background-image: url('../img/pink-dot.png');
+    background-repeat: no-repeat;
+    background-position: 48% 10%;
 }
 
 .team__title {
