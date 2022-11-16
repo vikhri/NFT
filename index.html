@@ -197,19 +197,43 @@
       </div>
     </footer>
     <script>window.addEventListener('DOMContentLoaded', (event) => {
-      var question = document.querySelector('.faq__question');
-      var answer = document.querySelector('.faq__answer');
+      var questions = document.querySelectorAll('.faq__question');
+      var answers = document.querySelectorAll('.faq__answer');
       
+      console.log(questions);
+      console.log(answers);
 
-      question.addEventListener('click', () => {
-          if (answer.classList.contains('faq__answer--closed')) {
-              answer.classList.remove('faq__answer--closed');
-              answer.classList.add('faq__answer--open');
-          
-          } else {
-              answer.classList.add('faq__answer--closed');
-              answer.classList.remove('faq__answer--open');
-  }
-  });
+      for (let i = 0; i < questions.length; i++) {
+        console.log(questions[i]);
+
+
+        questions[i].addEventListener('click', () => {
+          let open = (block) => { 
+            block.classList.remove('faq__answer--closed');
+            block.classList.add('faq__answer--open');
+          };
+
+          let close = (block) => {
+            block.classList.remove('faq__answer--open');
+            block.classList.add('faq__answer--closed');
+
+          };
+
+          let isClosed = (block) => {
+            return block.classList.contains('faq__answer--closed');            
+          };
+
+          let answer = answers[i];
+          console.log(i);
+
+          isClosed(answer) ? open(answer) : close(answer);
+
+          // if (isClosed(answer)) {
+          //   open(answer);
+          // } else {
+          //   close(answer);
+          // };
+        });
+      }
   });</script> 
   </body>
