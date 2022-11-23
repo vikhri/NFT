@@ -1,11 +1,20 @@
 .page {
     position: relative;
     width: 1440px;
+
+    @media (max-width: 320px) {
+        width: 320px;
+    }
+
 }
 
 .page__header {
     padding: 18px 64px;
     margin: 0;
+
+    @media (max-width: 320px) {
+        padding: 18px 0;
+    }
 
 }
 

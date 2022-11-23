@@ -15,6 +15,15 @@
     gap: 30px;
     flex-wrap: wrap;
     box-sizing: border-box;
+
+    @media (max-width:320px) {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        gap:0;
+        border-bottom: 1px solid lightgray;
+    }
+
 }
 
 .menu__item {
@@ -26,6 +35,17 @@
     padding-top: 15px;
     padding-bottom: 0;
     margin: 0;
+
+    @media (max-width: 320px) {
+        padding: 10px 0;
+        border-top: 1px solid lightgrey;
+        
+    }
+}
+
+.menu__item:last-of-type {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menu__link {
