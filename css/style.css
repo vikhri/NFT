@@ -224,12 +224,23 @@ body {
 .page__about {
   margin-bottom: 130px;
 }
+@media (max-width: 320px) {
+  .page__about {
+    margin-bottom: 30px;
+  }
+}
 
 .page__exclusive {
   margin-bottom: 145px;
   background-color: #FBF1E6;
   padding-bottom: 100px;
   padding-top: 100px;
+}
+@media (max-width: 320px) {
+  .page__exclusive {
+    margin-bottom: 30px;
+    padding-top: 50px;
+  }
 }
 
 .page__exclusive::before {
@@ -244,6 +255,18 @@ body {
   top: -150px;
 }
 
+@media (max-width: 320px) {
+  .page__exclusive::before {
+    content: " ";
+    display: inline-block;
+    background-image: url(../img/exclusive-top-wave.svg);
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 100%;
+    position: relative;
+    top: -130px;
+  }
+}
 .page__exclusive::after {
   content: " ";
   display: inline-block;
@@ -499,7 +522,7 @@ body {
 @media (max-width: 320px) {
   .about-list__description {
     font-size: 16px;
-    line-height: 14px;
+    line-height: 18px;
   }
 }
 
@@ -536,6 +559,7 @@ body {
 @media (max-width: 320px) {
   .exclusive__content {
     text-align: center;
+    width: 320px;
   }
 }
 
@@ -543,11 +567,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.exclusive-list__title {
-  font-size: 36px;
-  line-height: 32px;
 }
 
 .exclusive-list__subtitile {
@@ -564,22 +583,24 @@ body {
 @media (max-width: 320px) {
   .exclusive-list__text {
     width: auto;
+    padding: 15px;
   }
 }
 
 .exclusive-list__item {
   width: auto;
   min-height: 640px;
-  border-top: 1px solid black;
+  border-top: 1px solid rgba(223, 143, 51, 0.3);
 }
 @media (max-width: 320px) {
   .exclusive-list__item {
     text-align: center;
+    min-height: fit-content;
   }
 }
 
 .exclusive-list__item:last-child {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(223, 143, 51, 0.3);
 }
 
 .exclusive-list__item--1 {
@@ -624,6 +645,11 @@ body {
   width: 1100px;
   position: relative;
 }
+@media (max-width: 320px) {
+  .roadmap__content {
+    width: 100%;
+  }
+}
 
 .roadmap__subtitle {
   margin: 0 auto;
@@ -651,6 +677,11 @@ body {
   gap: 70px;
   align-items: center;
 }
+@media (max-width: 320px) {
+  .roadmap-list {
+    gap: 30px;
+  }
+}
 
 .roadmap-list::before {
   content: "";
@@ -663,6 +694,11 @@ body {
   height: 150px;
   z-index: 1;
 }
+@media (max-width: 320px) {
+  .roadmap-list::before {
+    z-index: -1;
+  }
+}
 
 .roadmap__item {
   background-image: url("../img/roadmap-spot.svg");
@@ -673,6 +709,15 @@ body {
   box-sizing: border-box;
   padding: 124px 85px;
   position: relative;
+}
+@media (max-width: 320px) {
+  .roadmap__item {
+    min-width: auto;
+    max-width: 300px;
+    max-height: 400px;
+    min-height: auto;
+    padding: 40px 40px 50px 50px;
+  }
 }
 
 .roadmap__item--illusrtated-1::before {
@@ -737,6 +782,11 @@ body {
   width: 1100px;
   text-align: center;
 }
+@media (max-width: 320px) {
+  .team__content {
+    width: 100%;
+  }
+}
 
 .team__subtitle {
   padding: 15px 0;
@@ -760,17 +810,30 @@ body {
   justify-content: space-between;
   row-gap: 90px;
 }
+@media (max-width: 320px) {
+  .team-list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
 
 .team-list__item {
   text-align: center;
+  padding: 0 40px;
 }
 
 .team-item__picture {
   width: 320px;
   height: 300px;
 }
+@media (max-width: 320px) {
+  .team-item__picture {
+    width: 100%;
+    height: auto;
+  }
+}
 
-.team-item__job-title {
+.team-item__job-title, p {
   padding: 0;
   margin: 20px 0x;
 }

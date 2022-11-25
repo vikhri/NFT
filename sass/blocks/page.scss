@@ -27,6 +27,10 @@
 
 .page__about {
     margin-bottom: 130px;
+
+    @media (max-width:320px) {
+        margin-bottom: 30px; 
+    }
 }
 
 .page__exclusive {
@@ -34,7 +38,14 @@
     background-color: #FBF1E6;
     padding-bottom: 100px;
     padding-top: 100px;
+
+    @media (max-width:320px) {
+        margin-bottom: 30px; 
+        padding-top: 50px;
+    }
+
 }
+
 
 .page__exclusive::before {
     content: ' ';
@@ -47,6 +58,22 @@
     position: relative;
     top: -150px;
 }
+
+@media (max-width:320px) {
+
+    .page__exclusive::before {
+        content: ' ';
+        display: inline-block;
+        background-image: url(../img/exclusive-top-wave.svg);
+        background-repeat: no-repeat;
+        height: 130px;
+        width: 100%;
+        position: relative;
+        top: -130px;
+    }
+
+}
+
 
 .page__exclusive::after {
     content: ' ';

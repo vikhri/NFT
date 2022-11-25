@@ -17,7 +17,6 @@
     padding: 0;
     margin-bottom: 68px;
 
-
 }
 
 .exclusive__content {
@@ -25,6 +24,7 @@
 
     @media (max-width:320px) {
         text-align: center;
+        width: 320px;
     }
 }
 
@@ -34,15 +34,9 @@
     margin: 0;
 }
 
-.exclusive-list__title {
-    font-size: 36px;
-    line-height: 32px;
-}
 
 .exclusive-list__subtitile {
     display: block;
-   
-
 }
 
 .exclusive-list__img {
@@ -53,6 +47,7 @@
     width: 400px;
     @media (max-width: 320px) {
         width:auto;
+        padding: 15px;
     }
 }
 
@@ -60,15 +55,16 @@
 .exclusive-list__item {
     width: auto;
     min-height: 640px;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(223, 143, 51, 0.3);
 
     @media (max-width: 320px) {
         text-align: center;
+        min-height: fit-content;
     }
 }
 
 .exclusive-list__item:last-child {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(223, 143, 51, 0.3);
 }
 
 
