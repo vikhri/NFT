@@ -355,7 +355,15 @@ body {
     width: 100%;
     gap: 0;
     border-bottom: 1px solid lightgray;
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    top: 100px;
   }
+}
+
+.menu--closed {
+  display: none;
 }
 
 .menu__item {
@@ -850,6 +858,14 @@ body {
 .faq__content {
   width: 1000px;
 }
+@media (max-width: 320px) {
+  .faq__content {
+    width: 320px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+}
 
 .faq__content::before {
   content: "";
@@ -861,6 +877,11 @@ body {
   position: absolute;
   left: -20px;
   top: -80px;
+}
+@media (max-width: 320px) {
+  .faq__content::before {
+    z-index: -1;
+  }
 }
 
 .faq__subtitle {
@@ -886,6 +907,12 @@ body {
   font-size: 24px;
   line-height: 22px;
 }
+@media (max-width: 320px) {
+  .faq__question {
+    font-size: 18px;
+    line-height: 16px;
+  }
+}
 
 .faq__list {
   border-bottom: 1px solid grey;
@@ -893,16 +920,17 @@ body {
 
 .faq__toggle--closed {
   display: inline-block;
-  width: 17px;
+  width: 37px;
   height: 17px;
   background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
   left: 47%;
   top: 50%;
 }
 
 .faq__toggle--open {
   display: inline-block;
-  width: 17px;
+  width: 37px;
   height: 17px;
   background-image: url("../img/minus.svg");
   background-repeat: no-repeat;
@@ -921,6 +949,14 @@ body {
   line-height: 30px;
   color: grey;
 }
+@media (max-width: 320px) {
+  .faq__answer--open {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px;
+    margin: 0;
+  }
+}
 
 .footer__content {
   position: relative;
@@ -931,7 +967,19 @@ body {
   grid-template-rows: 76px 200px 50px;
   grid-template-areas: "title navtitle" "socials navig" "madeby madeby";
 }
+@media (max-width: 320px) {
+  .footer__content {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@media (max-width: 320px) {
+  .navigation {
+    display: none;
+  }
+}
 .footer__content::before {
   content: "";
   position: absolute;
@@ -969,9 +1017,20 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+@media (max-width: 320px) {
+  .socials__list {
+    flex-direction: column;
+  }
+}
 
 .socials-list__item {
   margin-right: 30px;
+}
+@media (max-width: 320px) {
+  .socials-list__item {
+    padding: 20px;
+    font-size: 20px;
+  }
 }
 
 .socials-list__link {

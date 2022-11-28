@@ -14,6 +14,20 @@
     "socials navig"
     "madeby madeby";
 
+    @media (max-width: 320px) { 
+        width: 300px;
+
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+}
+
+@media (max-width: 320px) { 
+    .navigation { 
+        display: none;
+    }
 }
 
 .footer__content::before {
@@ -63,11 +77,20 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-
+    
+    @media (max-width: 320px) {
+        flex-direction: column;
+        
+    }
 }
 
 .socials-list__item {
     margin-right: 30px;
+
+    @media (max-width: 320px) {
+        padding: 20px;     
+        font-size: 20px;   
+    }
 }
 
 .socials-list__link {

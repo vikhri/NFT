@@ -16,14 +16,24 @@
     flex-wrap: wrap;
     box-sizing: border-box;
 
+
     @media (max-width:320px) {
         flex-direction: column;
         text-align: center;
         width: 100%;
         gap:0;
         border-bottom: 1px solid lightgray;
+
+        z-index: 2;
+        background-color: white;
+        position: absolute;
+        top: 100px;
     }
 
+}
+
+.menu--closed {
+    display: none;
 }
 
 .menu__item {
