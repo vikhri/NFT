@@ -9,8 +9,8 @@
   <body class="page">
     <header class="page__header page-header">
     <a class="page-header__logo logo" href="#"><img src="./img/logo.png" width="69px" height="73px" alt="Logo"></a>
-    <a class="page-header__toggle header-toggle--open" href="#"><span class="visually-hidden">Открыть меню</span></a>
-    <ul class="page-header__menu menu menu--close">
+    <a class="page-header__toggle  header-toggle--closed" href="#"><span class="visually-hidden">Открыть меню</span></a>
+    <ul class="page-header__menu menu menu--closed">
       <li class="menu__item"><a class="menu__link">Collect<br>ion</a></li>
       <li class="menu__item"><a class="menu__link">Cont<br>ent</a></li>
       <li class="menu__item"><a class="menu__link">Road<br>Map</a></li>
@@ -245,4 +245,32 @@
         });
       }
   });</script> 
+
+
+<script>
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+      let navMenu = document.querySelector('.menu');
+      let navToggle = document.querySelector('.page-header__toggle');
+      
+
+      navToggle.addEventListener('click', () => {
+          if (navToggle.classList.contains('header-toggle--closed')) {
+              navToggle.classList.remove('header-toggle--closed');
+              navToggle.classList.add('header-toggle--open');
+              navMenu.classList.remove('menu--closed');
+          
+          } else {
+              navToggle.classList.add('header-toggle--closed');
+              navToggle.classList.remove('header-toggle--open');
+              navMenu.classList.add('menu--closed');
+  }
+  });
+  });
+
+
+</script>
+
+
+
   </body>
