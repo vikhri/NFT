@@ -36,11 +36,18 @@
     display: none;
 }
 
+@media (min-width:320px) {
+    .menu--closed {
+        display: flex;
+    }
+}
+
 .menu__item {
     @include bold-font;
     font-size: 18px;
     line-height: 25px;
-    
+    color: black;
+
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 0;
@@ -60,5 +67,7 @@
 
 .menu__link {
     text-decoration: none;
+    color: black;
+
 }
 

@@ -366,12 +366,18 @@ body {
   display: none;
 }
 
+@media (min-width: 320px) {
+  .menu--closed {
+    display: flex;
+  }
+}
 .menu__item {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  color: black;
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 0;
@@ -391,6 +397,7 @@ body {
 
 .menu__link {
   text-decoration: none;
+  color: black;
 }
 
 .promo {
