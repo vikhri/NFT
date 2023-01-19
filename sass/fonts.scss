@@ -1,3 +1,5 @@
+$mobile-width: 390px;
+
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
@@ -33,7 +35,7 @@ body {
     @include main-font;
     font-size: 18px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
     font-size: 14px; 
     }
 }
@@ -43,7 +45,7 @@ body {
     font-size: 96px;
     line-height: 86px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         font-size: 40px;
         line-height: 45px; 
         }
@@ -55,7 +57,7 @@ body {
     font-size: 65px;
     line-height: 58px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         font-size: 22px;
         line-height: 16px; 
         }
@@ -66,7 +68,7 @@ body {
     font-size: 36px;
     line-height: 32px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         font-size: 18px;
         line-height: 18px; 
         }
@@ -78,10 +80,9 @@ body {
     font-size: 18px;
     line-height: 25px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         font-size: 14px;
-        line-height: 16px; 
-        }
+    }
 
 }
 
@@ -90,7 +91,7 @@ body {
     font-size: 18px;
     line-height: 25px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         font-size: 16px;
         line-height: 18px; 
         }

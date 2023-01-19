@@ -10,7 +10,7 @@
     font-weight: 700;
 }
 
-$mobile-width: 320px;
+$mobile-width: 390px;
 
 .about__content {
     display: block;
@@ -18,7 +18,7 @@ $mobile-width: 320px;
     position: relative;
     width: 1100px;
 
- @media (max-width: 320px) {
+ @media (max-width: $mobile-width) {
     padding: 30px;
     width: auto;
  }
@@ -48,7 +48,7 @@ $mobile-width: 320px;
     flex-direction: row;
     justify-content: space-between;
 
-     @media (max-width: 320px) {
+     @media (max-width: $mobile-width) {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
@@ -57,7 +57,7 @@ $mobile-width: 320px;
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: $mobile-width) {
     .about__img {
     
     }
@@ -67,7 +67,7 @@ $mobile-width: 320px;
     text-align: left;
     padding-right: 150px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         padding-right: 0px;
     }
 }
@@ -80,7 +80,7 @@ $mobile-width: 320px;
     padding: 28px 0 17px;
     margin: 0;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         font-size: 20px;
         line-height: 18px;
     }
@@ -99,7 +99,7 @@ $mobile-width: 320px;
     padding: 0 0 30px;
     margin: 0;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         font-size: 16px;
         line-height: 18px;
 
@@ -108,7 +108,7 @@ $mobile-width: 320px;
 }
 
 .about__img {
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         object-fit: contain;
         width: 280px;
         height: min-content;

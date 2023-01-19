@@ -1,3 +1,5 @@
+$mobile-width: 390px;
+
 .promo {
     min-height: 800px;
     background-image: url(../img/promo.png);
@@ -6,11 +8,12 @@
     background-position: -30px 0%;
     padding-top: 90px;
 
-    @media (max-width:320px) {
+    @media (max-width:$mobile-width) {
         min-height: auto;
-        background-size: 300%;
-        background-position: -180px 50px;
+        background-size: 250%;
+        background-position: -180px 150px;
         padding-bottom: 150px;
+        padding-top: 50px;
     
     }
 }
@@ -24,7 +27,7 @@
     margin-right: auto;
     text-align: center;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         width: auto;
         min-height: auto;
     }
@@ -36,7 +39,7 @@
 }
 
 .promo__subtitle {
-    padding: 15px 0 0;
+    padding: 20px 0 0;
     margin: 0;
     background-image: url('../img/peach-dot.png');
     background-repeat: no-repeat;

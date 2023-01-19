@@ -1,3 +1,5 @@
+$mobile-width: 390px;
+
 
 .excusive__subtitle {
     padding: 15px;
@@ -6,7 +8,7 @@
     background-position: 0% 0%;
     width: 60px;
 
-    @media (max-width:320px) {
+    @media (max-width:$mobile-width) {
         margin: 0 auto;
     }
 }
@@ -22,9 +24,9 @@
 .exclusive__content {
     width: 1100px;
 
-    @media (max-width:320px) {
+    @media (max-width: $mobile-width) {
         text-align: center;
-        width: 320px;
+        width: $mobile-width;
     }
 }
 
@@ -45,9 +47,9 @@
 
 .exclusive-list__text {
     width: 400px;
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         width:auto;
-        padding: 15px;
+        padding: 15px 30px;
     }
 }
 
@@ -57,7 +59,7 @@
     min-height: 640px;
     border-top: 1px solid rgb(223, 143, 51, 0.3);
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         text-align: center;
         min-height: fit-content;
     }
@@ -81,6 +83,7 @@
     background-position: 100%;
 }
 
+
 .exclusive-list__item--3 {
     background-image: url(../img/rare-man.png);
     background-repeat: no-repeat;
@@ -92,7 +95,7 @@
     background-position: 100%;
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile-width) {
 
     @for $i from 1 through 4 {
         .exclusive-list__item--#{$i} { 

@@ -1,9 +1,11 @@
+$mobile-width: 390px;
+
 .page {
     position: relative;
     width: 1440px;
 
-    @media (max-width: 320px) {
-        width: 320px;
+    @media (max-width: $mobile-width) {
+        width: $mobile-width;
     }
 
 }
@@ -12,7 +14,7 @@
     padding: 18px 64px;
     margin: 0;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         padding: 18px 0;
     }
 
@@ -20,7 +22,7 @@
 
 .page__promo {
     margin-bottom: 120px;
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         margin-bottom: 20px;
     }
 }
@@ -28,7 +30,7 @@
 .page__about {
     margin-bottom: 130px;
 
-    @media (max-width:320px) {
+    @media (max-width:$mobile-width) {
         margin-bottom: 30px; 
     }
 }
@@ -39,7 +41,7 @@
     padding-bottom: 100px;
     padding-top: 100px;
 
-    @media (max-width:320px) {
+    @media (max-width:$mobile-width) {
         margin-bottom: 30px; 
         padding-top: 50px;
     }
@@ -59,7 +61,7 @@
     top: -150px;
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile-width) {
 
     .page__exclusive::before {
         content: ' ';

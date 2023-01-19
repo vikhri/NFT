@@ -1,7 +1,9 @@
+$mobile-width: 390px;
+
 .page-header {
     display: flex;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         flex-direction: column;
         align-items: center;
 }
@@ -11,7 +13,7 @@
 .page-header__menu {
     margin-left: auto;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         margin-left: 0;
         width: 100%;
 }
@@ -21,21 +23,21 @@
     justify-self: flex-end;
     margin-left: 30px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         display: none;
     }
 
 }
 
 .page-header__logo {
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         align-self: flex-start;
         padding-left: 20px;
     }
 }
 
 .page-header__toggle {
-    @media (min-width: 321px) {
+    @media (min-width: $mobile-width + 1px) {
         display: none;
     }
 }
@@ -44,7 +46,7 @@
     content: "";
     position: relative;
     bottom: 50px;
-    right: -120px;
+    right: -140px;
     width: 32px;
     height: 2px;
     background-color: #000;

@@ -1,4 +1,4 @@
-
+$mobile-width: 390px;
 
 .footer__content {
     position: relative;
@@ -14,8 +14,8 @@
     "socials navig"
     "madeby madeby";
 
-    @media (max-width: 320px) { 
-        width: 300px;
+    @media (max-width: $mobile-width) { 
+        width: $mobile-width - 20px;
 
         display: flex;
         flex-direction: column;
@@ -24,7 +24,7 @@
 
 }
 
-@media (max-width: 320px) { 
+@media (max-width: $mobile-width) { 
     .navigation { 
         display: none;
     }
@@ -78,7 +78,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         flex-direction: column;
         
     }
@@ -87,7 +87,7 @@
 .socials-list__item {
     margin-right: 30px;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         padding: 20px;     
         font-size: 20px;   
     }
@@ -97,6 +97,17 @@
     text-decoration: none;
     cursor: pointer;
     color: black;
+}
+
+.socials-list__link, .navigation__link {
+    &:hover,
+    &:focus {
+        color: grey;
+    }
+}
+
+.navigation__link:active, .socials-list__link:active {
+    color: lighten(grey, 30%);
 }
 
 .navigation__list {

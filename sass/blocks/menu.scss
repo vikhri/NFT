@@ -1,3 +1,5 @@
+$mobile-width: 390px;
+
 @mixin bold-font {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -17,7 +19,7 @@
     box-sizing: border-box;
 
 
-    @media (max-width:320px) {
+    @media (max-width:$mobile-width) {
         flex-direction: column;
         text-align: center;
         width: 100%;
@@ -36,7 +38,7 @@
     display: none;
 }
 
-@media (min-width:321px) {
+@media (min-width:$mobile-width + 1px) {
     .menu--closed {
         display: flex;
     }
@@ -53,7 +55,7 @@
     padding-bottom: 0;
     margin: 0;
 
-    @media (max-width: 320px) {
+    @media (max-width: $mobile-width) {
         padding: 10px 0;
         border-top: 1px solid lightgrey;
         
