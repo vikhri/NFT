@@ -114,6 +114,15 @@ body {
   cursor: pointer;
 }
 
+.button:hover, .button:focus {
+  background-color: #f56d89;
+}
+
+.button:active {
+  background-color: #f99daf;
+  color: #e6e6e6;
+}
+
 .page-header {
   display: flex;
 }
@@ -366,7 +375,7 @@ body {
   display: none;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
   .menu--closed {
     display: flex;
   }
@@ -398,6 +407,14 @@ body {
 .menu__link {
   text-decoration: none;
   color: black;
+}
+
+.menu__link:active {
+  color: gray;
+}
+
+.menu__item:hover, .menu__item:focus {
+  border-bottom: 2px solid #F7859C;
 }
 
 .promo {
