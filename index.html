@@ -154,20 +154,34 @@
         <p class="faq__subtitle subtitle"><span class="decoration-dot decoration-dot--blue"></span>Faq</p>
         <h2 class="faq__title secondary-title">Frequent questions</h2>  
         <dl class="faq__list">
+          <div class="faq__block">
           <dt class="faq__question">Imperdiet et nunc, ipsum laoreet iaculis aliquet?<a class="faq__toggle faq__toggle--closed"></a></dt>
           <dd class="faq__answer faq__answer--closed">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</dd>
+          </div>
+          <div class="faq__block">
           <dt class="faq__question" >Imperdiet et nunc, ipsum laoreet iaculis aliquet?<a class="faq__toggle faq__toggle--closed"></a></dt>
           <dd class="faq__answer faq__answer--closed">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</dd>
+          </div>
+          <div class="faq__block">
           <dt class="faq__question">Imperdiet et nunc, ipsum laoreet iaculis aliquet?<a class="faq__toggle faq__toggle--closed"></a></dt>
           <dd class="faq__answer faq__answer--closed">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</dd>
+          </div>
+          <div class="faq__block">
           <dt class="faq__question">Imperdiet et nunc, ipsum laoreet iaculis aliquet?<a class="faq__toggle faq__toggle--closed"></a></dt>
           <dd class="faq__answer faq__answer--closed">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</dd>
+          </div>
+          <div class="faq__block">
           <dt class="faq__question">Imperdiet et nunc, ipsum laoreet iaculis aliquet?<a class="faq__toggle faq__toggle--closed"></a></dt>
           <dd class="faq__answer faq__answer--closed">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</dd>
+          </div>
+          <div class="faq__block">
           <dt class="faq__question">Imperdiet et nunc, ipsum laoreet iaculis aliquet?<a class="faq__toggle faq__toggle--closed"></a></dt>
           <dd class="faq__answer faq__answer--closed">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</dd>
+          </div>
+          <div class="faq__block">
           <dt class="faq__question">Imperdiet et nunc, ipsum laoreet iaculis aliquet?<a class="faq__toggle faq__toggle--closed"></a></dt>
           <dd class="faq__answer faq__answer--closed">Diam vestibulum mattis aliquam, urna condimentum id. Ultrices sit tincidunt diam integer amet, nec facilisis nec mi. Faucibus posuere turpis commodo leo ipsum magnis.</dd>
+         </div>  
         </dl>
       </div>
     </section>
@@ -198,54 +212,7 @@
         </div>
       </div>
     </footer>
-    <script>window.addEventListener('DOMContentLoaded', (event) => {
-      let questions = document.querySelectorAll('.faq__question');
-      let answers = document.querySelectorAll('.faq__answer');
-      let toggles = document.querySelectorAll('.faq__toggle');
-      
-      console.log(questions);
-      console.log(answers);
-
-      for (let i = 0; i < questions.length; i++) {
-        console.log(questions[i]);
-
-
-        questions[i].addEventListener('click', () => {
-          let open = (block, state) => { 
-            block.classList.remove('faq__answer--closed');
-            block.classList.add('faq__answer--open');
-            state.classList.remove('faq__toggle--closed');
-            state.classList.add('faq__toggle--open');
-
-          };
-
-          let close = (block, state) => {
-            block.classList.remove('faq__answer--open');
-            block.classList.add('faq__answer--closed');
-            state.classList.remove('faq__toggle--open');
-            state.classList.add('faq__toggle--closed');
-
-          };
-
-          let isClosed = (block, state) => {
-            return block.classList.contains('faq__answer--closed');            
-          };
-
-          let answer = answers[i];
-          let toggle = toggles[i];
-          console.log(i);
-
-          isClosed(answer, toggle) ? open(answer, toggle) : close(answer, toggle);
-
-          // if (isClosed(answer)) {
-          //   open(answer);
-          // } else {
-          //   close(answer);
-          // };
-        });
-      }
-  });</script> 
-
+<script src="./faq.js" type="text/javascript"></script>
 
 <script>
 
