@@ -47,7 +47,7 @@ $mobile-width: 390px;
 .menu__item {
     @include bold-font;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.4;
     color: black;
 
     padding-right: 15px;
