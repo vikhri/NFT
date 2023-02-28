@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.4;
   cursor: pointer;
 }
 
@@ -307,7 +307,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.4;
   color: black;
   padding-right: 15px;
   padding-top: 15px;
@@ -450,14 +450,14 @@
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 21px;
+  line-height: 0.87;
   padding: 28px 0 17px;
   margin: 0;
 }
 @media (max-width: 390px) {
   .about-list__item {
     font-size: 20px;
-    line-height: 18px;
+    line-height: 0.9;
   }
 }
 
@@ -470,14 +470,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.4;
   padding: 0 0 30px;
   margin: 0;
 }
 @media (max-width: 390px) {
   .about-list__description {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 1.12;
   }
 }
 
@@ -852,12 +852,12 @@
   padding: 30px 0;
   border-top: 1px solid grey;
   font-size: 24px;
-  line-height: 22px;
+  line-height: 0.9;
 }
 @media (max-width: 390px) {
   .faq__question {
     font-size: 18px;
-    line-height: 16px;
+    line-height: 0.88;
   }
 }
 
@@ -899,7 +899,7 @@
 @media (max-width: 390px) {
   .faq__answer--open {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 1;
     padding: 10px;
     margin: 0;
   }
@@ -1023,7 +1023,6 @@
   margin-right: 40px;
 }
 
-/* fonts use*/
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -1041,12 +1040,12 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  line-height: 86px;
+  line-height: 1.12;
 }
 @media (max-width: 390px) {
   .title {
     font-size: 40px;
-    line-height: 45px;
+    line-height: 0.88;
   }
 }
 
@@ -1055,12 +1054,12 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 65px;
-  line-height: 58px;
+  line-height: 0.71;
 }
 @media (max-width: 390px) {
   .secondary-title, h2 {
     font-size: 22px;
-    line-height: 16px;
+    line-height: 0.71;
   }
 }
 
@@ -1069,12 +1068,12 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 32px;
+  line-height: 1.12;
 }
 @media (max-width: 390px) {
   .third-title, h3 {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 1;
   }
 }
 
@@ -1083,7 +1082,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 0.72;
 }
 @media (max-width: 390px) {
   .subtitle {
@@ -1096,12 +1095,12 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.4;
 }
 @media (max-width: 390px) {
   .main-text {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 0.88;
   }
 }
 
