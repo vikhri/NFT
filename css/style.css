@@ -493,7 +493,7 @@
   padding: 15px;
   background-image: url(../img/orange-dot.png);
   background-repeat: no-repeat;
-  background-position: 0% 0%;
+  background-position: 0 0;
   width: 60px;
 }
 @media (max-width: 390px) {
@@ -503,9 +503,8 @@
 }
 
 .exclusive__title {
-  margin: 0;
   padding: 0;
-  margin-bottom: 68px;
+  margin: 0 0 68px 0;
 }
 
 .exclusive__content {
