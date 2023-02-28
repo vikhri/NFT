@@ -17,15 +17,3 @@ function buildStyles() {
     gulp.watch('./sass/**/*.scss', ['sass']);
   };
  
-
-// function defaultTask(cb) {
-    
-//     cb();
-//   }
-  
-//   exports.default = defaultTask
-
-
-// export default gulp.series(
-//     styles, server, watch
-//   );

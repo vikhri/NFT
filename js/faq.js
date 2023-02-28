@@ -29,30 +29,3 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 
 });
-
-
-
-
-
-    // let open = function () {
-      
-    //   this.querySelector('.faq__answer').classList.remove('faq__answer--closed');
-    //   this.querySelector('.faq__answer').classList.add('faq__answer--open');
-    //   this.querySelector('.faq__toggle').classList.remove('faq__toggle--closed');
-    //   this.querySelector('.faq__toggle').classList.add('faq__toggle--open');
-
-    // };
-
-    // let close = function () {
-      
-    //   this.querySelector('.faq__answer').classList.remove('faq__answer--open');
-    //   this.querySelector('.faq__answer').classList.add('faq__answer--closed');
-    //   this.querySelector('.faq__toggle').classList.remove('faq__toggle--open');
-    //   this.querySelector('.faq__toggle').classList.add('faq__toggle--closed');
-
-    // };
-
-   
-//     function isClosed() {
-//       return this.querySelector('.faq__answer').classList.contains('faq__answer--closed');            
-// };

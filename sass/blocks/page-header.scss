@@ -1,4 +1,5 @@
 $mobile-width: 390px;
+$mobile-width-wide: 391px;
 
 .page-header {
     display: flex;
@@ -37,7 +38,7 @@ $mobile-width: 390px;
 }
 
 .page-header__toggle {
-    @media (min-width: $mobile-width + 1px) {
+    @media (min-width: $mobile-width-wide) {
         display: none;
     }
 }
