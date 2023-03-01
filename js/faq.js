@@ -15,11 +15,10 @@ const stateClasses = {
   }
 };
 
-const toggle = ({target}) => {
+const toggle = ({currentTarget}) => {
   
-  const faqItemNode = target.closest(selectors.root);
-  const answerNode = faqItemNode.querySelector(selectors.answer)
-  const toggleButtonNode = faqItemNode.querySelector(selectors.toggleButton)
+  const answerNode = currentTarget.querySelector(selectors.answer)
+  const toggleButtonNode = currentTarget.querySelector(selectors.toggleButton)
 
   const isOpen = answerNode.classList.contains(stateClasses.answer.isOpen)
 

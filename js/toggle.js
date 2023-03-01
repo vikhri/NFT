@@ -20,22 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector(selectors.toggleButton);
 
 
-
     navToggle.addEventListener('click', () => {
 
         const isClosed = navToggle.classList.contains(states.toggle.closed)
-
-        // if (isClosed) {
-        //     navToggle.classList.remove(states.toggle.closed);
-        //     navToggle.classList.add(states.toggle.open);
-        //     navMenu.classList.remove(states.menu.closed);
-
-        //     return
-        // }
-        // navToggle.classList.add(states.toggle.closed);
-        // navToggle.classList.remove(states.toggle.open);
-        // navMenu.classList.add(states.menu.closed);
-
 
         navToggle.classList.toggle(states.toggle.open, isClosed);
         navToggle.classList.toggle(states.toggle.closed, !isClosed);
