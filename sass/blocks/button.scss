@@ -29,9 +29,9 @@
     &:focus {
         background-color: darken(#F7859C, 5%);
     }
+    &:active {
+        background-color: lighten(#F7859C, 5%);
+        color: darken($color: white, $amount: 10%);
+    }
 }
 
-.button:active {
-    background-color: lighten(#F7859C, 5%);
-    color: darken($color: white, $amount: 10%);
-}

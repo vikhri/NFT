@@ -1,8 +1,8 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
 
-    let faqBlocks = document.querySelectorAll('.faq__block');
+    const faqBlocks = document.querySelectorAll('.faq__block');
      
-    let toggle = function () {
+    const toggle = function () {
       
       // Проверяю скрыт ли ответ. 
       if (this.querySelector('.faq__answer').classList.contains('faq__answer--closed'))
