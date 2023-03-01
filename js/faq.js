@@ -1,31 +1,42 @@
-window.addEventListener('DOMContentLoaded', () => {
+const selectors = {
+  root: '.faq__block',
+  answer: '.faq__answer',
+  toggleButton: '.faq__toggle',
+};
 
-    const faqBlocks = document.querySelectorAll('.faq__block');
-     
-    const toggle = function () {
-      
-      // Проверяю скрыт ли ответ. 
-      if (this.querySelector('.faq__answer').classList.contains('faq__answer--closed'))
+const stateClasses = {
+  answer: {
+    isClosed: 'faq__answer--closed',
+    isOpen: 'faq__answer--open'
+  },
+  toggleButton: {
+    isClosed:'faq__toggle--closed',
+    isOpen:'faq__toggle--open'
+  }
+};
 
-      {
-      // Если скрыт - открываю. Добавляю и удаляю соотв. классы
-      this.querySelector('.faq__answer').classList.remove('faq__answer--closed');
-      this.querySelector('.faq__answer').classList.add('faq__answer--open');
-      this.querySelector('.faq__toggle').classList.remove('faq__toggle--closed');
-      this.querySelector('.faq__toggle').classList.add('faq__toggle--open');
-      
-    } else {
-      // Если открыт - закрываю. Добавляю и удаляю соотв. классы
-      this.querySelector('.faq__answer').classList.remove('faq__answer--open');
-      this.querySelector('.faq__answer').classList.add('faq__answer--closed');
-      this.querySelector('.faq__toggle').classList.remove('faq__toggle--open');
-      this.querySelector('.faq__toggle').classList.add('faq__toggle--closed');
-    }
-        
-    };
-   
-    faqBlocks.forEach((block) => {
-      block.addEventListener('click', toggle )         
-    });
+const toggle = ({target}) => {
+  
+  const faqItemNode = target.closest(selectors.root);
+  const answerNode = faqItemNode.querySelector(selectors.answer)
+  const toggleButtonNode = faqItemNode.querySelector(selectors.toggleButton)
 
-});
+  const isOpen = answerNode.classList.contains(stateClasses.answer.isOpen)
+
+  answerNode.classList.toggle(stateClasses.answer.isClosed, isOpen)
+  toggleButtonNode.classList.toggle(stateClasses.toggleButton.isClosed, isOpen)
+  answerNode.classList.toggle(stateClasses.answer.isOpen, !isOpen)
+  toggleButtonNode.classList.toggle(stateClasses.toggleButton.isOpen, !isOpen)
+
+};
+
+const initFaqToggle = () => {
+  const rootNodes = document.querySelectorAll(selectors.root)
+
+  rootNodes.forEach((node) => {
+    node.addEventListener('click', toggle)
+  })
+};
+
+window.addEventListener('DOMContentLoaded', initFaqToggle);
+
