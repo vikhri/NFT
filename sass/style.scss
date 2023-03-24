@@ -11,8 +11,7 @@
 @use './blocks/faq.scss';
 @use './blocks/footer.scss';
 @use './typo.scss';
-
-
+@import "./variables.scss";
 
 /* main styles */
 
@@ -25,7 +24,6 @@ body {
     min-width: 320px;
     margin: 0 auto;
 }
-
 
 .visually-hidden {
     position: absolute;

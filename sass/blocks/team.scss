@@ -1,69 +1,71 @@
-$mobile-width: 390px;
+@import "../variables";
 
 .team__content {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 
-    @media (max-width:$mobile-width) {
-        width: 100%;
-    }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .team__subtitle {
-    padding: 15px 0;
-    margin: 0;
+  padding: 15px 0;
+  margin: 0;
 
-    background-image: url('../img/pink-dot.png');
-    background-repeat: no-repeat;
-    background-position: 48% 10%;
+  background-image: url('../img/pink-dot.png');
+  background-repeat: no-repeat;
+  background-position: 48% 10%;
 }
 
 .team__title {
-    padding: 0;
-    margin: 0 0 45px;
+  padding: 0;
+  margin: 0 0 45px;
 }
 
 .team-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    row-gap: 90px;
+  padding: 0;
+  margin: 0;
 
-    @media (max-width: $mobile-width) {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-        
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  row-gap: 90px;
+
+  list-style: none;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+
+  }
 }
 
 .team-list__item {
-    text-align: center;
-    padding: 0 40px;
+  text-align: center;
+  padding: 0 40px;
 }
 
 .team-item__picture {
+  width: auto;
+  height: auto;
+
+  @media (max-width: $mobile-width) {
     width: auto;
     height: auto;
 
-    @media (max-width: $mobile-width) {
-        width:auto;
-        height: auto;
-        
-    }
+  }
 }
 
 .team-item__job-title, p {
-    padding: 0;
-    margin: 20px 0x;
+  padding: 0;
+  margin: 20px 0;
 }
 
 .team-item__name {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 

@@ -1,153 +1,151 @@
-$mobile-width: 390px;
+@import "../variables";
 
 .roadmap__content {
-    width: 1100px;
-    position: relative;
+  width: 1100px;
+  position: relative;
 
-    @media (max-width: $mobile-width) {
-        width: 100%;
-    }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .roadmap__subtitle {
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
-    background-image: url('../img/pink-dot.png');
-    background-repeat: no-repeat;
-    background-position: 47% 10%;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  background-image: url('../img/pink-dot.png');
+  background-repeat: no-repeat;
+  background-position: 47% 10%;
 
 }
 
 
 .roadmap__title {
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 68px;
-    text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 68px;
+  text-align: center;
 }
 
 .roadmap-list {
-    position: relative;
+  position: relative;
 
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-    @media (max-width: $mobile-width) {
-        gap: 30px;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    gap: 30px;
+  }
 }
-
 
 
 .roadmap-list::before {
-    content: '';
-    display: block;
-    background-image: url('../img/roadmap-dots.png');
-    position: absolute;
-    right: 220px;
-    top: 10px;
-    width: 200px;
-    height: 150px;
-    z-index: 1;
+  content: '';
+  display: block;
+  background-image: url('../img/roadmap-dots.png');
+  position: absolute;
+  right: 220px;
+  top: 10px;
+  width: 200px;
+  height: 150px;
+  z-index: 1;
 
-    @media (max-width: $mobile-width) {
-        z-index: -1;
+  @media (max-width: $mobile-width) {
+    z-index: -1;
 
-    }
+  }
 }
 
 .roadmap__item {
-    background-image: url('../img/roadmap-spot.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-image: url('../img/roadmap-spot.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 
-    min-width: 533px;
-    min-height: 477px;
-    box-sizing: border-box;
+  min-width: 533px;
+  min-height: 477px;
+  box-sizing: border-box;
 
-    padding: 124px 85px;
+  padding: 124px 85px;
 
-    position: relative;
+  position: relative;
 
 
-    @media (max-width: $mobile-width) {
-        min-width: auto;
-        max-width: 300px;
-        max-height: 400px;
-        min-height: auto;
-        padding: 40px 40px 50px 50px;
-    }
+  @media (max-width: $mobile-width) {
+    min-width: auto;
+    max-width: 300px;
+    max-height: 400px;
+    min-height: auto;
+    padding: 40px 40px 50px 50px;
+  }
 }
 
-.roadmap__item--illusrtated-1::before {
-    content: '';
-    display: block;
-    width: 185px;
-    height: 423px;
-    background-image: url('../img/roadmap-1st-person.png');
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -250px;
-    bottom: 10px;
+.roadmap__item--illustrated-1::before {
+  content: '';
+  display: block;
+  width: 185px;
+  height: 423px;
+  background-image: url('../img/roadmap-1st-person.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -250px;
+  bottom: 10px;
 }
 
-.roadmap__item--illusrtated-2::before {
-    content: '';
-    display: block;
-    width: 346px;
-    height: 470px;
-    background-image: url(../img/roadmap-2nd-person.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -360px;
-    bottom: -60px;
+.roadmap__item--illustrated-2::before {
+  content: '';
+  display: block;
+  width: 346px;
+  height: 470px;
+  background-image: url(../img/roadmap-2nd-person.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -360px;
+  bottom: -60px;
 
 }
 
 .roadmap-list__text {
-    max-width: 360px;
-    color: #404756;
+  max-width: 360px;
+  color: #404756;
 }
 
 .roadmap-list__title {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.roadmap-list__subtitile {
-    padding: 0;
-    margin: 0 0 10px;
+.roadmap-list__subtitle {
+  padding: 0;
+  margin: 0 0 10px;
 }
 
 .roadmap-list__percent {
-    display: block;
-    position: absolute;
-    left: -236px;
-    margin: 10px;
-    color: #F7859C;
-    ;
+  display: block;
+  position: absolute;
+  left: -236px;
+  margin: 10px;
+  color: #F7859C;;
 }
 
 .roadmap-list__percent::after {
-    content: '';
-    position: absolute;
+  content: '';
+  position: absolute;
 
-    width: 33px;
-    height: 36px;
+  width: 33px;
+  height: 36px;
 
-    background-image: url('../img/pink-dot.png');
-    background-repeat: no-repeat;
+  background-image: url('../img/pink-dot.png');
+  background-repeat: no-repeat;
 
-    left: -50px;
-    top: -10px;
-    
-    
+  left: -50px;
+  top: -10px;
+
+
 }
 

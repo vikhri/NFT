@@ -1,86 +1,84 @@
-$mobile-width: 390px;
+@import "./variables.scss";
 
 @mixin main-font {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 @mixin bold-font {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
-
 body {
-    @include main-font;
-    font-size: 18px;
+  @include main-font;
+  font-size: 18px;
 
-    @media (max-width: $mobile-width) {
-    font-size: 14px; 
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
 }
 
 .title {
-    @include bold-font;
+  @include bold-font;
 
-    font-size: 96px;
-    line-height: 1.12;
+  font-size: 96px;
+  line-height: 1.12;
 
-    @media (max-width: $mobile-width) {
-        font-size: 40px;
-        line-height: 0.88; 
-        }
-    }
-
+  @media (max-width: $mobile-width) {
+    font-size: 40px;
+    line-height: 0.88;
+  }
+}
 
 .secondary-title, h2 {
-    @include bold-font;
+  @include bold-font;
 
-    font-size: 65px;
+  font-size: 65px;
+  line-height: 0.71;
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
     line-height: 0.71;
-
-    @media (max-width: $mobile-width) {
-        font-size: 22px;
-        line-height: 0.71; 
-        }
+  }
 }
 
 .third-title, h3 {
-    @include bold-font;
+  @include bold-font;
 
-    font-size: 36px;
-    line-height: 1.12;
+  font-size: 36px;
+  line-height: 1.12;
 
-    @media (max-width: $mobile-width) {
-        font-size: 18px;
-        line-height: 1; 
-        }
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 1;
+  }
 
 }
 
 .subtitle {
-    @include bold-font;
+  @include bold-font;
 
-    font-size: 18px;
-    line-height: 0.72;
+  font-size: 18px;
+  line-height: 0.72;
 
-    @media (max-width: $mobile-width) {
-        font-size: 14px;
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
 
 }
 
 .main-text {
-    @include main-font;
-    
-    font-size: 18px;
-    line-height: 1.4;
+  @include main-font;
 
-    @media (max-width: $mobile-width) {
-        font-size: 16px;
-        line-height: 0.88; 
-        }
+  font-size: 18px;
+  line-height: 1.4;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 0.88;
+  }
 
 }
