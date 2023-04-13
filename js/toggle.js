@@ -2,17 +2,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const selectors = {
         menu: '.menu',
-        toggleButton: '.page-header__toggle'
+        toggleButton: '.header-navigation__toggle'
 
     }
 
     const states = {
         toggle: {
-            closed: 'header-toggle--closed',
-            open: 'header-toggle--open'
+            closed: 'header-navigation__toggle--closed',
+            open: 'header-navigation__toggle--open'
         },
         menu: {
             closed: 'menu--closed'
+            open: 'menu--open'
         }
     }
 
